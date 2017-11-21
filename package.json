@@ -1,0 +1,9 @@
+{
+  "name": "hapi-sessions",
+  "version": "1.0.0",
+  "dependencies": {
+    "boom": "^7.1.1",
+    "hoek": "^5.0.2",
+    "uuid": "^3.1.0"
+  }
+}

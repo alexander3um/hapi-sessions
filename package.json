@@ -1,6 +1,13 @@
 {
   "name": "hapi-sessions",
   "version": "1.0.0",
+  "homepage": "https://github.com/alexander3um/hapi-sessions",
+  "description": "",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/alexander3um/hapi-sessions.git"
+  },
+  "keywords": ["hapi", "sessions", "plugin"],
   "dependencies": {
     "boom": "^7.1.1",
     "hoek": "^5.0.2",

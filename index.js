@@ -12,9 +12,10 @@ module.exports.plugin = {
                 flags.ttl = options.expiresIn;
                 return {};
             },
-            generateTimeout: 5000
+            generateTimeout: 5000,
+            cache: options.cache
         });
-
+        
         server.state(`session`, {
             isSecure: false,
             isHttpOnly: false,
@@ -45,8 +46,13 @@ module.exports.plugin = {
             if (!request.state.session) {
                 session = uuid.v4();
             }
-            
-            await sessionsCache.get(session);
+
+            try {
+                await sessionsCache.get(session);
+            } catch (error) {
+                throw Boom.badImplementation();
+            }
+
             h.state(`session`, session);
             return h.continue;
         });

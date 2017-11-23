@@ -14,8 +14,8 @@ await server.register([
 ]);
 ```
 ## Options
-`expiresIn` TTL for the session cookie and the cache record.
-`password` Passowrd for cookie encryption.
-`cache` Cache name created within `server.cache`;
+- `expiresIn` TTL for the session cookie and the cache record.
+- `password` Passowrd for cookie encryption.
+- `cache` Cache name created within `server.cache`;
 
 The plugin has been made by a total rookie for personal purposes. Any critics are welcome.

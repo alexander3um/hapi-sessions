@@ -16,7 +16,8 @@ await server.register([
 ## Options
 - `expiresIn` TTL for the session cookie and the cache record.
 - `password` Passowrd for cookie encryption.
-- `cache` Cache name created within `server.cache`;
+- `cache` Cache name created within `server.cache`.
+- `isSecure`, `isHttpOnly` the same as in server.state options.
 ## API
 - `request.session.get()` – gets the session data, stored in cache.
 - `request.session.set(value)` – sets the session data.

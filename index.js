@@ -17,8 +17,8 @@ module.exports.plugin = {
         });
         
         server.state(`session`, {
-            isSecure: false,
-            isHttpOnly: false,
+            isSecure: options.isSecure,
+            isHttpOnly: options.isHttpOnly,
             ttl: options.expiresIn,
             path: `/`,
             encoding: `iron`,
